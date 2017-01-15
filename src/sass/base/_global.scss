@@ -1,0 +1,16 @@
+/* ESTILOS COMUNES */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    color: #ffffff;
+    background-image: url("../img/bg_pattern_2.jpg");
+}
+.site-container {
+    min-width: 320px;
+}
+ul {
+    list-style-type: none;
+}

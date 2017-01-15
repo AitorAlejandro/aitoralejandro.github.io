@@ -1,0 +1,29 @@
+.site-header {
+    height: 3rem;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0 2%;
+
+    .title-area {
+        float: left;
+    }
+    .nav-header {
+        float: right;
+        font-size: 1.33rem;
+        padding: 0.66rem;
+        cursor: pointer;
+    }
+}
+
+.site-title {
+    margin: 0;
+    font-weight: 300;
+    font-size: 1.75rem;
+    line-height: 1.5;
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+}
