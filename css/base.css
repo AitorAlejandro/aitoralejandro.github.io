@@ -2979,7 +2979,7 @@ ul {
   list-style-type: none; }
 
 .site-header {
-  height: 3rem;
+  height: auto;
   background-color: transparent;
   position: fixed;
   top: 0;
@@ -2991,15 +2991,20 @@ ul {
 
 .site-header .nav-header {
   float: right;
-  font-size: 1.33rem;
+  font-size: 1.5rem;
   padding: 0.66rem;
   cursor: pointer; }
+
+.site-header .nav-header button {
+  color: #fff;
+  background-color: transparent;
+  border: none; }
 
 .site-title {
   margin: 0;
   font-weight: 300;
   font-size: 1.75rem;
-  line-height: 1.5; }
+  line-height: 1.75; }
 
 .site-title a {
   text-decoration: none;
