@@ -2969,6 +2969,7 @@ template {
   box-sizing: border-box; }
 
 body {
+  font-family: sans-serif;
   color: #ffffff;
   background-image: url("../img/bg_pattern_2.jpg"); }
 
@@ -2979,7 +2980,7 @@ ul {
   list-style-type: none; }
 
 .site-header {
-  height: auto;
+  height: 57px;
   background-color: transparent;
   position: fixed;
   top: 0;
