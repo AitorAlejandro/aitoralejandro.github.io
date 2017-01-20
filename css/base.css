@@ -2979,54 +2979,47 @@ body {
 ul {
   list-style-type: none; }
 
-dialog {
-  display: block;
+.nav-overlay {
+  height: 0;
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); }
-
-.no-scroll {
-  overflow: hidden; }
-
-.simple-modal-overlay {
   position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
+  z-index: 1;
   left: 0;
-  background: #fff;
-  opacity: .8;
-  z-index: 666;
-  cursor: pointer; }
+  top: 0;
+  background-color: #000;
+  background-color: rgba(0, 50, 50, 0.95);
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
 
-.simple-modal {
-  position: fixed;
-  left: 15%;
-  top: 5%;
-  width: 70%;
-  max-height: 98vh;
-  right: auto;
-  border: 2px solid #000;
-  background: #fff;
-  z-index: 667;
-  padding: 2em;
-  overflow: auto; }
+.nav-overlay.open {
+  height: 100%; }
 
-.simple-modal-close {
-  float: right;
-  background: #933;
-  border-radius: 1em;
-  color: #fff;
-  padding: .25em;
+.nav-overlay a {
+  padding: 8px;
   text-decoration: none;
-  line-height: 1.2;
-  text-align: center; }
+  font-size: 36px;
+  color: #fff;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
 
-.simple-modal-close:focus, .simple-modal-close:hover, .simple-modal-close:active {
-  background: #882525; }
+.site-menu {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 3.8rem;
+  padding: 0; }
 
-.simple-modal-overlay[data-background-click="disabled"] {
-  cursor: auto; }
+.nav-overlay .js-menu-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 2rem;
+  color: #fff;
+  background-color: transparent;
+  border: 0; }
 
 .site-header {
   height: 57px;
@@ -3059,6 +3052,3 @@ dialog {
 .site-title a {
   text-decoration: none;
   color: #fff; }
-
-.site-menu {
-  padding: 2rem; }
