@@ -2981,10 +2981,9 @@ ul {
 
 dialog {
   display: block;
-  bottom: 0;
-  top: 0;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); }
 
 .no-scroll {
   overflow: hidden; }
@@ -3060,3 +3059,6 @@ dialog {
 .site-title a {
   text-decoration: none;
   color: #fff; }
+
+.site-menu {
+  padding: 2rem; }
