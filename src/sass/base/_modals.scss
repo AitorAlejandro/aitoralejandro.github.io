@@ -15,7 +15,7 @@
     a {
         padding: 8px;
         text-decoration: none;
-        font-size: 36px;
+        font-size: 2.8rem;
         color: #fff;
         display: block; /* Display block instead of inline */
         transition: 0.3s; /* Transition effects on hover (color) */
@@ -25,12 +25,13 @@
 
 /* Position the content inside the overlay */
 .site-menu {
-    position: relative;
-    top: 25%; /* 25% from the top */
     width: 100%; /* 100% width */
     text-align: center; /* Centered text/links */
-    margin-top: 3.8rem;
     padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /* Position the close button (top right corner) */
