@@ -2979,6 +2979,9 @@ body {
 ul {
   list-style-type: none; }
 
+button {
+  cursor: pointer; }
+
 .nav-overlay {
   height: 0;
   width: 100%;
