@@ -2969,7 +2969,7 @@ template {
   box-sizing: border-box; }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #ffffff;
   background-image: url("../img/bg_pattern_2.jpg"); }
 
