@@ -3008,6 +3008,10 @@ button {
   -webkit-transition: 0.3s;
   transition: 0.3s; }
 
+.nav-overlay a:hover span, .nav-overlay a .active {
+  border-bottom: 1px solid;
+  padding-bottom: 0.22rem; }
+
 .site-menu {
   width: 100%;
   text-align: center;
@@ -3016,15 +3020,7 @@ button {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  border-top: 1px dashed;
-  border-bottom: 1px dashed; }
-
-.site-menu li:first-child {
-  border-top: 3px solid #000; }
-
-.site-menu li:last-child {
-  border-bottom: 3px solid #000; }
+          transform: translateY(-50%); }
 
 .nav-overlay .js-menu-close {
   position: absolute;
