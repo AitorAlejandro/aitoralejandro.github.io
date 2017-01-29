@@ -7,7 +7,7 @@
 body {
     font-family: 'Lato', sans-serif;
     color: #ffffff;
-    background-image: url("../img/bg_pattern_2.jpg");
+    background-color: #16a085;
 }
 .site-container {
     min-width: 320px;
@@ -17,4 +17,7 @@ ul {
 }
 button {
     cursor: pointer;
+}
+a, button {
+    outline-color: #fff;
 }
