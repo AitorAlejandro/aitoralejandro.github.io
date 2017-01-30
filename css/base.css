@@ -3009,6 +3009,10 @@ a, button {
   background-color: transparent;
   border: none; }
 
+.site-header .nav-header button:hover, .site-header .nav-header button:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1); }
+
 .site-title {
   margin: 0;
   font-weight: 300;

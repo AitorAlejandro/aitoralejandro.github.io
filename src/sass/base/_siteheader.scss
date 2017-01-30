@@ -18,6 +18,10 @@
             color: #fff;
             background-color: transparent;
             border: none;
+            &:hover,
+            &:focus, {
+                transform: scale(1.1);
+            }
         }
     }
 }
