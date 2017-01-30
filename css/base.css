@@ -3007,7 +3007,9 @@ a, button {
 .site-header .nav-header button {
   color: #fff;
   background-color: transparent;
-  border: none; }
+  border: none;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease; }
 
 .site-header .nav-header button:hover, .site-header .nav-header button:focus {
   -webkit-transform: scale(1.1);
