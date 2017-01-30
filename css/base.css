@@ -2970,8 +2970,7 @@ template {
 
 body {
   font-family: 'Lato', sans-serif;
-  color: #ffffff;
-  background-color: #16a085;
+  background-color: #fff;
   background-image: url("../img/bg-working.jpg");
   background-size: 100%;
   background-repeat: no-repeat; }
