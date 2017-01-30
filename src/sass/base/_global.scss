@@ -7,9 +7,6 @@
 body {
     font-family: 'Lato', sans-serif;
     background-color: #fff;
-    background-image: url("../img/bg-working.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
 }
 .site-container {
     min-width: 320px;
@@ -22,4 +19,7 @@ button {
 }
 a, button {
     outline-color: #fff;
+}
+.responsive-img {
+    max-width: 100%;
 }
