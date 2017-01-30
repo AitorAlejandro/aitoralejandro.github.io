@@ -2971,7 +2971,10 @@ template {
 body {
   font-family: 'Lato', sans-serif;
   color: #ffffff;
-  background-color: #16a085; }
+  background-color: #16a085;
+  background-image: url("../img/bg-working.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat; }
 
 .site-container {
   min-width: 320px; }
@@ -2984,6 +2987,38 @@ button {
 
 a, button {
   outline-color: #fff; }
+
+.site-header {
+  height: 57px;
+  background-color: rgba(0, 0, 0, 0.66);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0 2%; }
+
+.site-header .title-area {
+  float: left; }
+
+.site-header .nav-header {
+  float: right;
+  font-size: 1.5rem;
+  padding: 0.66rem;
+  cursor: pointer; }
+
+.site-header .nav-header button {
+  color: #fff;
+  background-color: transparent;
+  border: none; }
+
+.site-title {
+  margin: 0;
+  font-weight: 300;
+  font-size: 1.75rem;
+  line-height: 1.75; }
+
+.site-title a {
+  text-decoration: none;
+  color: #fff; }
 
 .nav-overlay {
   height: 0;
@@ -3033,35 +3068,3 @@ a, button {
   color: #fff;
   background-color: transparent;
   border: 0; }
-
-.site-header {
-  height: 57px;
-  background-color: transparent;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 0 2%; }
-
-.site-header .title-area {
-  float: left; }
-
-.site-header .nav-header {
-  float: right;
-  font-size: 1.5rem;
-  padding: 0.66rem;
-  cursor: pointer; }
-
-.site-header .nav-header button {
-  color: #fff;
-  background-color: transparent;
-  border: none; }
-
-.site-title {
-  margin: 0;
-  font-weight: 300;
-  font-size: 1.75rem;
-  line-height: 1.75; }
-
-.site-title a {
-  text-decoration: none;
-  color: #fff; }
