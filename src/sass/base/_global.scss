@@ -6,10 +6,25 @@
 }
 body {
     font-family: 'Lato', sans-serif;
-    background-color: #fff;
+    background-color: #f0f0f0;
+    background-image: url("../img/cream_dust.jpg");
+    color: #343434;
 }
 .site-container {
     min-width: 320px;
+}
+main {
+    margin: 0 3%;
+}
+.h1 {
+    font-weight: 300;
+    line-height: 1;
+}
+p {
+    line-height: 1.44;
+}
+.markup {
+    color: #ccc;
 }
 ul {
     list-style-type: none;
