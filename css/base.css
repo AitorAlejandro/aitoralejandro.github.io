@@ -2978,7 +2978,9 @@ body {
   min-width: 320px; }
 
 main {
-  margin: 0 3%; }
+  width: 95%;
+  margin: 0 auto;
+  max-width: 600px; }
 
 .h1 {
   font-weight: 300;
@@ -3097,3 +3099,6 @@ a, button {
 
 .text-right {
   text-align: right; }
+
+.is-modal-open {
+  overflow: hidden; }
