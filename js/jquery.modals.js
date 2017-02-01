@@ -7,7 +7,7 @@ $('.js-menu-open').click(function(){
 
 $('.js-menu-close').click(function(){
     $(".nav-overlay").removeClass("open");
-    $("body").addClass("is-modal-open");
+    $("body").removeClass("is-modal-open");
 });
 
 });
