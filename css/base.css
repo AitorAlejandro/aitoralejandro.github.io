@@ -3002,7 +3002,7 @@ a, button {
   outline-color: #fff; }
 
 .responsive-img {
-  max-width: 100%; }
+  width: 100%; }
 
 .site-header {
   height: 57px;
