@@ -8,7 +8,7 @@ body {
     font-family: $global-font-family;
     font-size: $global-font-size;
     background-color: #f0f0f0;
-    background-image: url("/img/cream_dust.jpg");
+    background-image: url("#{$image-path}cream_dust.jpg");
     color: #343434;
 }
 .site-container {
