@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
 $('.js-menu-open').click(function(){
-    $(".nav-overlay").addClass("open");
     $("body").addClass("is-modal-open");
+    $(".nav-overlay").addClass("open");
 });
 
 $('.js-menu-close').click(function(){
