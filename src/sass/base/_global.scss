@@ -1,16 +1,45 @@
 /* ESTILOS COMUNES */
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+    box-sizing: $global-box-sizing
 }
 body {
     font-family: $global-font-family;
     font-size: $global-font-size;
+    font-weight: $global-font-weight;
+    line-height: $global-line-height;
     background-color: #f0f0f0;
     background-image: url("#{$image-path}cream_dust.jpg");
     color: #343434;
 }
+
+/* typography */
+.h1 {
+    font-family: $alt-font-family;
+    font-weight: $global-font-weight;
+    line-height: $header-line-height;
+}
+p {
+    line-height: $global-line-height;
+}
+.markup {
+    color: #ccc;
+    font-size: $txt-small;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+button {
+    cursor: pointer;
+}
+a, button {
+    outline-color: #fff;
+}
+/* /typography */
+
+
+
+/* Layout */
 .site-container {
     min-width: $global-site-min-width;
 }
@@ -23,26 +52,6 @@ footer {
     border-top: 7px solid #fff;
     padding: 1rem;
 }
-.h1 {
-    font-weight: 300;
-    line-height: 1;
-}
-p {
-    line-height: 1.44;
-}
-.markup {
-    color: #ccc;
-}
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-button {
-    cursor: pointer;
-}
-a, button {
-    outline-color: #fff;
-}
-.responsive-img {
-    width: 100%;
-}
+
+
+

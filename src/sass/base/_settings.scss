@@ -1,5 +1,33 @@
 /* globals */
-$global-font-family: 'Lato', sans-serif; 
+$global-font-family: 'Lato', sans-serif;
+$alt-font-family: "Helvetica Neue", Helvetica, sans-serif;
+$global-font-weight: 300;
 $global-font-size: 100%;
+$global-line-height: 1.5;
+$header-line-height: 1;
+
+/* font-sizes */
+$txt-tiny: 0.8rem;
+$txt-small: 0.9rem;
+$txt-normal: 1rem;
+$txt-big: 1.5rem;
+$txt-huge: 2rem;
+
+/* Colores sociales */
+$twitter-brand-color :rgb(64,153,255);
+$googleplus-brand-color :rgb(221, 75, 57);
+$linkedin-brand-color: #4875B4;
+$github-brand-color: #2f2f2f;
+
+/* layout */
 $global-site-min-width: 320px;
-$image-path: "/img/"
+$global-box-sizing: border-box;
+$image-path: "/img/";
+
+
+/* appendix */
+/*
+
+Chequeo del contraste del color mediaante http://webaim.org/resources/contrastchecker/ 
+
+*/
