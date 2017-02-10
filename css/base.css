@@ -2972,10 +2972,32 @@ body {
   font-family: "Lato",sans-serif;
   font-size: 100%;
   font-weight: 300;
-  line-height: 1.44;
+  line-height: 1.5;
   background-color: #f0f0f0;
   background-image: url("/img/cream_dust.jpg");
   color: #343434; }
+
+.h1 {
+  font-family: "Helvetica Neue",Helvetica,sans-serif;
+  font-weight: 300;
+  line-height: 1; }
+
+p {
+  line-height: 1.5; }
+
+.markup {
+  color: #ccc;
+  font-size: .9rem; }
+
+ul {
+  list-style-type: none;
+  padding: 0; }
+
+button {
+  cursor: pointer; }
+
+a, button {
+  outline-color: #fff; }
 
 .site-container {
   min-width: 320px; }
@@ -2989,30 +3011,6 @@ footer {
   border-top: 7px solid #fff;
   padding: 1rem; }
 
-.h1 {
-  font-family: "Helvetica Neue",Helvetica,sans-serif;
-  font-weight: 300;
-  line-height: 1; }
-
-p {
-  line-height: 1.44; }
-
-.markup {
-  color: #ccc; }
-
-ul {
-  list-style-type: none;
-  padding: 0; }
-
-button {
-  cursor: pointer; }
-
-a, button {
-  outline-color: #fff; }
-
-.responsive-img {
-  width: 100%; }
-
 .text-left {
   text-align: left; }
 
@@ -3021,6 +3019,27 @@ a, button {
 
 .text-right {
   text-align: right; }
+
+.text-justify {
+  text-align: justify; }
+
+.text-tiny {
+  font-size: .8rem; }
+
+.text-small {
+  font-size: .9rem; }
+
+.text-normal {
+  font-size: 1rem; }
+
+.text-big {
+  font-size: 1.5rem; }
+
+.text-huge {
+  font-size: 2rem; }
+
+.responsive-img {
+  width: 100%; }
 
 .is-modal-open {
   overflow: hidden; }
