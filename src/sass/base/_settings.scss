@@ -13,11 +13,8 @@ $txt-normal: 1rem;
 $txt-big: 1.5rem;
 $txt-huge: 2rem;
 
-/* Colores sociales */
-$twitter-brand-color :rgb(64,153,255);
-$googleplus-brand-color :rgb(221, 75, 57);
-$linkedin-brand-color: #4875B4;
-$github-brand-color: #2f2f2f;
+/* font colors */
+$txt-lead-color: #343434;
 
 /* layout */
 $global-site-min-width: 320px;
@@ -28,6 +25,6 @@ $image-path: "/img/";
 /* appendix */
 /*
 
-Chequeo del contraste del color mediaante http://webaim.org/resources/contrastchecker/ 
+Chequeo del contraste del color mediante http://webaim.org/resources/contrastchecker/ 
 
 */

@@ -2540,11 +2540,12 @@ main {
 .site-footer {
   padding-top: 1.5rem; }
 
-.main-footer li {
+.social-links-list li {
   padding: 0 1rem; }
 
-.github-color:hover, .gitgub-color:focus {
-  color: #2f2f2f; }
+.social-links-list a {
+  color: #5b5b5b; }
 
-.twitter-color:hover, .twitter-color:focus {
-  color: #4099ff; }
+.social-links-list a:hover, .social-links-list a:focus {
+  color: #343434;
+  text-shadow: 0 4px 7px rgba(0, 0, 0, 0.25); }
