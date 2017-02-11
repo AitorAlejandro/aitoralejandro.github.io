@@ -2411,7 +2411,8 @@ a, button {
 main {
   width: 93%;
   margin: 0 auto;
-  max-width: 44rem; }
+  max-width: 44rem;
+  outline: none; }
 
 .text-left {
   text-align: left; }
