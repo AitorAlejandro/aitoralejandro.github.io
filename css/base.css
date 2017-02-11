@@ -2411,11 +2411,7 @@ a, button {
 main {
   width: 93%;
   margin: 0 auto;
-  max-width: 700px; }
-
-footer {
-  border-top: 7px solid #fff;
-  padding: 1rem; }
+  max-width: 44rem; }
 
 .text-left {
   text-align: left; }
@@ -2539,3 +2535,15 @@ footer {
   color: #fff;
   background-color: transparent;
   border: 0; }
+
+.site-footer {
+  padding-top: 1.5rem; }
+
+.main-footer li {
+  padding: 0 1rem; }
+
+.github-color:hover, .gitgub-color:focus {
+  color: #2f2f2f; }
+
+.twitter-color:hover, .twitter-color:focus {
+  color: #4099ff; }

@@ -1,0 +1,15 @@
+.site-footer {
+    padding-top: 1.5rem;
+}
+.main-footer li {
+    padding: 0 1rem;
+}
+
+.github-color:hover,
+.gitgub-color:focus {
+    color: $github-brand-color;
+}
+.twitter-color:hover,
+.twitter-color:focus {
+    color: $twitter-brand-color;
+}
