@@ -38,6 +38,19 @@ a {
 a, button {
     outline-color: #fff;
 }
+hr {
+    clear: both;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    min-height: 0;
+    border: 0; 
+    margin: 25px 0;
+    height: 1px;
+    background: #000;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(#fff), to(#fff), color-stop(50%, #000));
+}
+
 /* /typography */
 
 
