@@ -2385,6 +2385,21 @@ body {
   font-weight: 300;
   line-height: 1; }
 
+.one-line {
+  font-size: 9vw; }
+
+@media screen and (min-width: 48em) {
+  .one-line {
+    font-size: 8vw; } }
+
+@media screen and (min-width: 62em) {
+  .one-line {
+    font-size: 6vw; } }
+
+@media screen and (min-width: 87em) {
+  .one-line {
+    font-size: 3rem; } }
+
 p {
   line-height: 1.5; }
 

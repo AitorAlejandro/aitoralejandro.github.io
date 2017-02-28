@@ -18,6 +18,18 @@ body {
     font-weight: $global-font-weight;
     line-height: $header-line-height;
 }
+.one-line {
+    font-size: 9vw;
+    @media screen and (min-width: 48em) {
+        font-size: 8vw;
+    }
+    @media screen and (min-width: 62em) {
+        font-size: 6vw;
+    }
+    @media screen and (min-width: 87em) {
+        font-size: 3rem;
+    }
+}
 p {
     line-height: $global-line-height;
 }
