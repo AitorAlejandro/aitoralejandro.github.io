@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Aitor Alejandro - Desarrollador Web Frontend</title>
+    <title>Pesadilla en la Web | Aitor Alejandro - Desarrollador Web Frontend</title>
     <meta name="description" content="Profesional del desarrollo web en su aspecto Frontend. HTML + CSS3 + JavaScript. Creación de interfaces. Maquetación web.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -24,10 +24,14 @@
 <!-- site-container -->
 <div class="site-container">
 
-
+<a href="#inicio-del-contenido" class="sr-only">Ir al contenido principal</a>
 <header class="site-header">
     <div class="title-area">
-        <h1 class="site-title"><a href="https://aitoralejandro.github.io/" title="Desarrollador Web Frontend">Aitor Alejandro</a></h1>
+        <h1 class="site-title">
+            <a href="https://aitoralejandro.github.io/" title="Ir a inicio">
+                <span>Aitor Alejandro</span> <span class="sr-only">Desarrollador Web Frontend</span>
+            </a>
+        </h1>
     </div>
     <div class="nav-header">
        <button type="button" class="js-menu-open">
@@ -38,23 +42,45 @@
     
     <nav class="nav-overlay">
         <ul class="site-menu">
-            <li><a href="/"><span>INICIO</span></a></li>
+            <li><a href="/"><span class="active">INICIO</span></a></li>
             <li><a href="/quien-soy"><span>¿QUIÉN SOY?</span></a></li>
-            <li><a href="/pesadillaenlaweb"><span class="active">BLOG</span></a></li>
+            <li><a href="/pesadillaenlaweb"><span>BLOG</span></a></li>
             <li><a href="/contactar"><span>CONTACTAR</span></a></li>
         </ul>
-        <button type="button" class="js-menu-close">
-            <i class="fa fa-times" aria-hidden="true"></i>
-            <span class="sr-only">Close</span>
+        <button type="button" class="js-menu-close" aria-hidden="true">
+            <i class="fa fa-times"><!-- Menú --></i>
         </button>
     </nav>
 </header>
 <img src="/img/hero-pesadilla.jpg" alt="" class="responsive-img" title="Gracias a @maroquotidien y https://unsplash.com">
 
 <main>
-    <h1 class="h1">
+    <h1 class="h1 one-line">
         <span aria-hidden="true" class="markup">&lt;h1&gt;</span>Pesadilla en la web<span aria-hidden="true" class="markup">&lt;/h1&gt;</span>
     </h1>
+
+    <section>
+        <article>
+            <h1 class="one-line">Tipos primitivos en JavaScript</h1>
+            <p>Los tipos primitivos representan pequeñas piezas de información como por ejemplo <span class="italic" lang="en">true</span> ó <span class="italic">25</span>. Existen 5 tipos primitivos en JavaScript:</p>
+            <dl>
+                <dt lang="en">Boolean</dt>
+                <dd><span class="italic" lang="en">true</span>, <span class="italic" lang="en">false</span></dd>
+
+                <dt lang="en">Number</dt>
+                <dd>Cualquier valor numérico ya sea entero o de coma flotante</dd>
+
+                <dt lang="en">String</dt>
+                <dd>Un carácter o secuencia de caracteres delimitado por comillas simples o dobles</dd>
+
+                <dt lang="en">Null</dt>
+                <dd>Un tipo primitivo que tiene un único valor, <span class="italic" lang="en">null</span></dd>
+
+                <dt lang="en">Undefined</dt>
+                <dd>Un tipo primitivo que tiene un único valor, <span class="italic" lang="en">undefined</span>. Es el valor asignado a una variable que no está inicializada.</dd>
+            </dl>
+        </article>
+    </section>
     <p>
         <span aria-hidden="true" class="markup">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi tempora beatae vitae quos maxime odit dignissimos, possimus, quod ipsa officia autem assumenda amet aliquid laborum? Pariatur unde, dolore quos est!<span aria-hidden="true" class="markup">&lt;/p&gt;</span></p>
     <p>
