@@ -13,7 +13,7 @@ body {
 }
 
 /* typography */
-.h1 {
+.h1, .h2 {
     font-family: $alt-font-family;
     font-weight: $global-font-weight;
     line-height: $header-line-height;
@@ -40,6 +40,12 @@ p {
 ul {
     list-style-type: none;
     padding: 0;
+}
+dt {
+    font-weight: bold;
+}
+.italic {
+    font-style: italic;
 }
 button {
     cursor: pointer;

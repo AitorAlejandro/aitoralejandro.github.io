@@ -77,35 +77,66 @@
                 <dt lang="en">Undefined</dt>
                 <dd>Un tipo primitivo que tiene un único valor, <span class="italic" lang="en">undefined</span>. Es el valor asignado a una variable que no está inicializada.</dd>
             </dl>
+            <p>Los tres primeros tipos (<span lang="en">Boolean</span>, <span lang="en">Number</span> y <span lang="en">String</span>) se comportan de forma similar, mientras que los dos últimos (<span lang="en">null</span> y <span lang="en">undefined</span> funcionan de una forma un poco distinta. Todos los tipos primitivos tienen una representación literal de su valor. Los <span class="italic">literales</span> representan valores: "Aitor", 25, 1.51, true, null, undefined.</p>
+            <p>En JavaScript una variable que contiene un tipo primitivo contiene directamente ese valor, no un puntero hacia él). Cuando asignas un valor primitivo a una variable, el valor se copia en esa variable. Esto significa que si estableces una variable igual a otra, cada variable contiene su propia copia del dato. Por ejemplo:</p>
+            <pre>
+            <code class="language-javascript">
+var color1 = "rojo";
+var color2 = color1;
+            </code>
+            </pre>
+            <p>Aquí, el valor <span class="italic">"rojo"</span> se asigna a la variable <span class="italic">color1</span> y posteriormente a la variable <span class="italic">color2</span> se le asigna el valor almacenado en <span class="italic">color1</span>, que es <span class="italic">"rojo"</span>. A pesar de que <span class="italic">color1</span> y <span class="italic">color2</span> contienen el mismo valor, son variables independientes una de otra. Puedes cambiar el valor de una ellas sin afectar a la otra. Como las dos variables contienen valores de tipo primitivo, usan su propio alojamiento separado en memoria y los cambios en una variable no se ven reflejados en la otra.</p>
+            <pre>
+            <code class="language-javascript">
+var color1 = "rojo";
+var color2 = color1;
+
+console.log(color1); // "rojo"
+console.log(color2); // "rojo"
+
+color1 = "azul";
+
+console.log(color1); // "azul"
+console.log(color2); // "rojo"
+            </code>
+            </pre>
+            <p>En el código anterior, <span class="italic">color1</span> se cambia a <span class="italic">"azul"</span> y <span class="italic">color2</span> no se ve afectada y sigue manteniendo <span class="italic">"rojo"</span>.</p>
+
+            <h2 class="h2">Identificando tipos primitivos</h2>
         </article>
     </section>
-    <p>
-        <span aria-hidden="true" class="markup">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi tempora beatae vitae quos maxime odit dignissimos, possimus, quod ipsa officia autem assumenda amet aliquid laborum? Pariatur unde, dolore quos est!<span aria-hidden="true" class="markup">&lt;/p&gt;</span></p>
-    <p>
-        <span aria-hidden="true" class="markup">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi tempora beatae vitae quos maxime odit dignissimos, possimus, quod ipsa officia autem assumenda amet aliquid laborum? Pariatur unde, dolore quos est!<span aria-hidden="true" class="markup">&lt;/p&gt;</span></p>
-    <p>
-        <span aria-hidden="true" class="markup">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi tempora beatae vitae quos maxime odit dignissimos, possimus, quod ipsa officia autem assumenda amet aliquid laborum? Pariatur unde, dolore quos est!<span aria-hidden="true" class="markup">&lt;/p&gt;</span></p>
-    <p>
-        <span aria-hidden="true" class="markup">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi tempora beatae vitae quos maxime odit dignissimos, possimus, quod ipsa officia autem assumenda amet aliquid laborum? Pariatur unde, dolore quos est!<span aria-hidden="true" class="markup">&lt;/p&gt;</span></p>
-    <p>
-        <span aria-hidden="true" class="markup">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi tempora beatae vitae quos maxime odit dignissimos, possimus, quod ipsa officia autem assumenda amet aliquid laborum? Pariatur unde, dolore quos est!<span aria-hidden="true" class="markup">&lt;/p&gt;</span></p>
-    <p>
-        <span aria-hidden="true" class="markup">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi tempora beatae vitae quos maxime odit dignissimos, possimus, quod ipsa officia autem assumenda amet aliquid laborum? Pariatur unde, dolore quos est!<span aria-hidden="true" class="markup">&lt;/p&gt;</span></p>
-    <p>
-        <span aria-hidden="true" class="markup">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi tempora beatae vitae quos maxime odit dignissimos, possimus, quod ipsa officia autem assumenda amet aliquid laborum? Pariatur unde, dolore quos est!<span aria-hidden="true" class="markup">&lt;/p&gt;</span></p>
-    <p>
-        <span aria-hidden="true" class="markup">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi tempora beatae vitae quos maxime odit dignissimos, possimus, quod ipsa officia autem assumenda amet aliquid laborum? Pariatur unde, dolore quos est!<span aria-hidden="true" class="markup">&lt;/p&gt;</span></p>
-    <p>
-        <span aria-hidden="true" class="markup">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi tempora beatae vitae quos maxime odit dignissimos, possimus, quod ipsa officia autem assumenda amet aliquid laborum? Pariatur unde, dolore quos est!<span aria-hidden="true" class="markup">&lt;/p&gt;</span></p>
-    <p>
-        <span aria-hidden="true" class="markup">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi tempora beatae vitae quos maxime odit dignissimos, possimus, quod ipsa officia autem assumenda amet aliquid laborum? Pariatur unde, dolore quos est!<span aria-hidden="true" class="markup">&lt;/p&gt;</span></p>
-    <p>
-        <span aria-hidden="true" class="markup">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi tempora beatae vitae quos maxime odit dignissimos, possimus, quod ipsa officia autem assumenda amet aliquid laborum? Pariatur unde, dolore quos est!<span aria-hidden="true" class="markup">&lt;/p&gt;</span></p>
-    <p>
-        <span aria-hidden="true" class="markup">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi tempora beatae vitae quos maxime odit dignissimos, possimus, quod ipsa officia autem assumenda amet aliquid laborum? Pariatur unde, dolore quos est!<span aria-hidden="true" class="markup">&lt;/p&gt;</span></p>
     
-
 </main>
+
+<hr>
+<footer class="site-footer">
+    <div class="main-footer">
+        <ul class="text-center horizontal social-links-list">
+            <li>
+                <a href="https://github.com/AitorAlejandro" targent="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i> <span class="sr-only">Perfil Github (se abre en ventana nueva)</span></a>
+            </li>
+            <li>
+                <a href="http://codepen.io/AitorAlejandro/" targent="_blank"><i class="fa fa-codepen fa-2x" aria-hidden="true"></i> <span class="sr-only">Perfil Codepen (se abre en ventana nueva)</span></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/aitor_alejandro" targent="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i> <span class="sr-only">Perfil Twitter (se abre en ventana nueva)</span></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/aitoralejandro/" targent="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i> <span class="sr-only">Perfil Linkedin (se abre en ventana nueva)</span></a>
+            </li>
+            <li>
+                <a href="https://plus.google.com/u/0/+AitorAlejandro" targent="_blank"><i class="fa fa-google-plus-official fa-2x" aria-hidden="true"></i> <span class="sr-only">Perfil Google+ (se abre en ventana nueva)</span></a>
+            </li>
+        </ul>
+    </div>
+    <div class="sub-footer">
+        <ul class="text-tiny text-center horizontal">
+            <li>Copyright &copy; 2015 Aitor Alejandro - Todos los derechos reservados</li>
+            <li><a href="">Política de privacidad</a></li>
+            <li><a href="">Sitemap</a></li>
+        </ul>
+    </div>
+</footer>
 
 </div>
 <!-- /site-container -->
@@ -114,6 +145,7 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
 <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.11.2.js"><\/script>')</script>
 <script src="/js/jquery.modals.js"></script>
+<script src="/js/vendor/prism.js"></script>
 <!-- /scripts -->
 </body>
 </html>
