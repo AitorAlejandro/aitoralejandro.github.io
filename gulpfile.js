@@ -8,7 +8,6 @@ var gulp = require('gulp'),
 gulp.task('sassbase', function () {
   return gulp.src('./src/sass/base/base.scss')
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-    .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer(autoprefixerOptions))
     .pipe(gulp.dest('./css'));
 });
