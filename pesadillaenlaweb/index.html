@@ -86,8 +86,7 @@ var color2 = color1;
             </code>
             </pre>
             <p>Aquí, el valor <span class="italic">"rojo"</span> se asigna a la variable <span class="italic">color1</span> y posteriormente a la variable <span class="italic">color2</span> se le asigna el valor almacenado en <span class="italic">color1</span>, que es <span class="italic">"rojo"</span>. A pesar de que <span class="italic">color1</span> y <span class="italic">color2</span> contienen el mismo valor, son variables independientes una de otra. Puedes cambiar el valor de una ellas sin afectar a la otra. Como las dos variables contienen valores de tipo primitivo, usan su propio alojamiento separado en memoria y los cambios en una variable no se ven reflejados en la otra.</p>
-            <pre>
-            <code class="language-javascript">
+            <pre><code class="language-javascript">
 var color1 = "rojo";
 var color2 = color1;
 
@@ -98,11 +97,39 @@ color1 = "azul";
 
 console.log(color1); // "azul"
 console.log(color2); // "rojo"
-            </code>
-            </pre>
+            </code></pre>
             <p>En el código anterior, <span class="italic">color1</span> se cambia a <span class="italic">"azul"</span> y <span class="italic">color2</span> no se ve afectada y sigue manteniendo <span class="italic">"rojo"</span>.</p>
 
             <h2 class="h2">Identificando tipos primitivos</h2>
+            <p>La mejor forma de identificar tipos primitivos es utilizando el operador <span class="italic">typeof</span>, que funciona sobre cualquier tipo de variable y devuelve un string indicando el tipo de dato que contiene. A continuación unos ejemplos de su uso:</p>
+            <pre><code class="language-javascript">
+console.log(typeof "Aitor"); // "string"
+console.log(typeof 25); // "number"
+console.log(typeof 3.7); // "number"
+console.log(typeof false); // "boolean"
+console.log(typeof undefined); // "undefined"
+            </code></pre>
+            <p>Hasta aquí todo normal y con resultados como cabría esperar. La parte extraña viene cuando utilizamos <span class="italic">typeof</span> con <span class="italic">null</span>.</p>
+            <pre><code class="language-javascript">
+console.log(typeof null); // "object"
+            </code></pre>
+            <p>Sí, devuelve "object". Pero ¿por qué "object" cuando en realidad el tipo sería null?. Se podría argumentar que <span class="italic">null</span> es un puntero vacío hacia un objeto. Aún así sigue siendo confuso.</p>
+            <p>La mejor manera es comprobar si un valor es <span class="italic">null</span> es compararlo directamente con <span class="italic">null</span>.</p>
+            <pre><code class="language-javascript">
+console.log(valor === null); // true o false
+            </code></pre>
+
+            <h2 class="h2">Métodos primitivos</h2>
+            <p>A pesar de ser tipos primitivos (no son objetos) tienen métodos built-in. <span class="italic">null</span> y <span class="italic">undefined</span> no tienen métodos. Algunos ejemplos:</p>
+            <pre><code class="language-javascript">
+var nombre = "Aitor";
+var nombreMinuscula = nombre.toLowerCase();
+var primeraLetra = nombre.charAt(0);
+var precio = 10;
+var descripcionPrecio = precio.toFixed(2); // "10.00"
+var todoOK = true;
+console.log(todoOK.toString()); // "true"
+            </code></pre>
         </article>
     </section>
     
