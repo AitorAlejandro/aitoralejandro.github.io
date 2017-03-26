@@ -1,5 +1,7 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
+    cssMin = require('gulp-cssmin'),
+    sourcemaps = require('gulp-sourcemaps'),
     del = require('del'),
     autoprefixer = require('gulp-autoprefixer'),
     autoprefixerOptions = {browsers: ['last 2 versions', '> 5%', 'Firefox ESR']};
@@ -7,8 +9,11 @@ var gulp = require('gulp'),
 //Transpila base.scss en forma compressed, pasa el autoprefixer y deja el resultado en ./css/base.css
 gulp.task('sassbase', function () {
   return gulp.src('./src/sass/base/base.scss')
-    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(sourcemaps.init())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(cssMin())
     .pipe(autoprefixer(autoprefixerOptions))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('./css'));
 });
 
