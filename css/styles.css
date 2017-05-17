@@ -47,11 +47,11 @@ img {
     text-align: center;
     width: 50%;
     margin: auto;
+    max-width: 14em;
 }
 img.avatar {
     border: 8px solid rgba(0,0,0,0.1);
     border-radius: 100%;
-    max-width: 14em;
 }
 .page-subtitle {
     text-align: center;
