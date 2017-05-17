@@ -51,6 +51,7 @@ img {
 img.avatar {
     border: 8px solid rgba(0,0,0,0.1);
     border-radius: 100%;
+    max-width: 14em;
 }
 .page-subtitle {
     text-align: center;
