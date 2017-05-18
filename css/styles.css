@@ -30,18 +30,44 @@ img {
     margin-bottom: 0;
     margin-top: 0.4em;
     font-size: 1.5rem;
-    background: url(../img/logo-github.png) no-repeat;
-    background-size: contain;
-    padding-left: 1em;
+}
+.page-title .fa {
+    padding-left: 0.25em;
+    padding-right: 0.25em;
 }
 
 .main-content {
+    position: relative;
+    z-index: 1;
     margin-top: 52px;
+    overflow: hidden;
     padding: 1.5em 0.75em 2.5em 0.75em;
+}
+.bg-caption {
+    position: absolute;
+    left: -1rem;
+    top: 0;
+    bottom: 0;
+    right: -1em;
+    z-index: -2;
+    /* foto de Alejandro Escamilla https://unsplash.com/search/working?photo=N7XodRrbzS0 */
+    background-image: url(../img/bg-caption.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(5px);
+}
+.bg-caption-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.7;
     background: #67B26F;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 .avatar-container {
     text-align: center;
@@ -50,7 +76,7 @@ img {
     max-width: 14em;
 }
 img.avatar {
-    border: 8px solid rgba(0,0,0,0.1);
+    border: 8px solid rgba(0,0,0,0.3);
     border-radius: 100%;
 }
 .page-subtitle {
@@ -62,9 +88,12 @@ img.avatar {
     text-align: center;
     color: #fff;
 }
+.location .fa {
+    padding-right: 0.5em;
+}
 .weblink {
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     font-size: 1.5rem;
 }
 .weblink a {
