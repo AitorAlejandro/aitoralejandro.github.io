@@ -1,6 +1,6 @@
 body {
     font-family: 'Lato', sans-serif;
-    color: rgba(72,72,72,0.8);
+    color: rgba(72,72,72);
 }
 img {
     display: inline-block;
@@ -36,7 +36,7 @@ img {
     padding-right: 0.25em;
 }
 
-.main-content {
+.main-caption {
     position: relative;
     z-index: 1;
     margin-top: 52px;
@@ -100,6 +100,50 @@ img.avatar {
     color: #fff;
     text-decoration: none;
 }
+
+
+.main-content {
+    width: 90%;
+    margin: 2em auto;
+    padding-top: 1em;
+    border-top: 1px solid #e8e8e8;
+}
+
+.repo {
+    font-family: Marcellus, Lato, sans-serif;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+    border: 1px solid #d6d6d6;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 1.75rem;
+    border-radius: 3px;
+}
+.project-title a {
+    color: #01a0ed;
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 1em 0 0.66em 0;
+    text-decoration: none;
+    padding: 0 0.75em;
+}
+.project-description {
+    padding: 0 0.75em;
+}
+.project-footer {
+    font-family: 'Lato', sans-serif;
+    background-color: #f4f4f4;
+    border-top: 1px solid #d6d6d6;
+    padding: 0.75em;
+    display: flex;
+    justify-content: space-between;
+}
+.repo-link {
+    text-decoration: none;
+}
+
 .main-footer {
     text-align: center;
     padding-top: 2.5em;
