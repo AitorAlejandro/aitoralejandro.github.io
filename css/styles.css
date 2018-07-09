@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+
+body {
+    font-family: Raleway, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    padding: 0;
+    font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-weight: 400;
+    background-color: #fff;
+    color: #0a0a0a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.site-header {
+    height: 100vh;
+    min-height: 475px;
+    background-color: #2f2f2f;
+    background-image: url('../img/tyler-van-der-hoeven-357415-unsplash.jpg');
+    /* Thanks to Tyler van der Hoeven @tyvdh */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-position: center;
+}
+.site-title,
+.site-subtitle  {
+    font-weight: 300;
+    color: #efeff2;
+}
+.site-title {
+    font-size: 17vw;
+    line-height: 0.8;
+    padding: 2% 2%;
+    text-shadow: 14px 14px 5px rgba(0, 0, 0, 1);
+    margin: 0;
+}
+.site-subtitle {
+    line-height: 0.8;
+    padding: 0 2%;
+}
+.site-claim {
+    color: #efeff2;
+    padding: 0 2%;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+@media screen and (min-width: 75em) {
+    .site-title {
+       font-size: 9rem;
+    }
+  }
