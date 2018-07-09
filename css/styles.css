@@ -12,8 +12,7 @@ body {
 }
 
 .site-header {
-    height: 100vh;
-    min-height: 475px;
+    min-height: 100vh;
     background-color: #2f2f2f;
     background-image: url('../img/tyler-van-der-hoeven-357415-unsplash.jpg');
     /* Thanks to Tyler van der Hoeven @tyvdh */
