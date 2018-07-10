@@ -43,8 +43,16 @@ body {
     font-size: 17vw;
     line-height: 0.8;
     padding: 2% 2%;
-    text-shadow: 14px 14px 5px rgba(0, 0, 0, 1);
     margin: 0;
+}
+.site-title a,
+.site-title a:hover,
+.site-title a:focus,
+.site-title a:visited {
+    font-size: 17vw;
+    color: #efeff2;
+    text-shadow: 14px 14px 5px rgba(0, 0, 0, 1);
+    text-decoration: none;
 }
 .site-subtitle {
     line-height: 0.8;
