@@ -3,7 +3,7 @@
 body {
     font-family: Raleway, "Helvetica Neue", Arial, Helvetica, sans-serif;
     padding: 0;
-    font-weight: 400;
+    font-weight: 300;
     background-color: #fff;
     color: #0a0a0a;
     -webkit-font-smoothing: antialiased;
@@ -12,6 +12,9 @@ body {
 
 .site-header {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #2f2f2f;
     background-image: url('../img/tyler-van-der-hoeven-357415-unsplash.jpg');
     /* Thanks to Tyler van der Hoeven @tyvdh */
@@ -51,13 +54,6 @@ body {
     color: #efeff2;
     padding: 0 2%;
     font-size: 1.6rem;
-    font-weight: 300;
     margin-top: 3em;
-    margin-bottom: 0;
 }
 
-@media screen and (min-width: 75em) {
-    .site-title {
-       font-size: 9rem;
-    }
-  }
