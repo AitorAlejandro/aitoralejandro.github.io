@@ -20,6 +20,17 @@ body {
     background-blend-mode: multiply;
     background-position: center;
 }
+ /* the fallback for IE 10, 11 and Edge. */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .site-header:after {
+    content: '';
+    background: rgba(47,47,47,0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+}
 .site-title,
 .site-subtitle  {
     font-weight: 300;
