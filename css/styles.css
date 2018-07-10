@@ -39,8 +39,9 @@ body {
 .site-claim {
     color: #efeff2;
     padding: 0 2%;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: 300;
+    margin-bottom: 0;
 }
 
 @media screen and (min-width: 75em) {
