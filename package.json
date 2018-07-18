@@ -6,7 +6,9 @@
   "dependencies": {
     "node-sass": "^4.9.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "sass": "^1.9.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
