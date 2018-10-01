@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300');
-
 @import "./vendors/normalize-v8_0_0.scss";
+@import "./_typography.scss";
 
 body {
-    font-family: Raleway, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: $font-primary;
+    font-size: $text-base-size;
     padding: 0;
     font-weight: 300;
     background-color: #fff;
