@@ -11,4 +11,29 @@ $text-md:   $text-base-size * $text-scale-ratio;
 $text-lg:   $text-base-size * $text-scale-ratio * 2;
 $text-xl:   $text-base-size * $text-scale-ratio * 3;
 $text-xxl:  $text-base-size * $text-scale-ratio * 4;
-$text-xxl:  $text-base-size * $text-scale-ratio * 5;
+
+/* text size */
+.text--xs {
+  font-size: $text-xs;
+}
+.text--sm {
+  font-size: $text-sm;
+}
+.text-lg {
+  font-size: $text-lg;
+}
+.text-xl {
+  font-size: $text-xl;
+}
+.text-xxl {
+  font-size: $text-xxl;
+}
+
+$baseline: 24px;
+
+  /* spacing values */
+$space-sm:   $baseline / 2;
+$space-md:   $baseline;
+$space-lg:   $baseline * 2;
+$space-xl:   $baseline * 3;
+
