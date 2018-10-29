@@ -30,6 +30,17 @@
   </script>
   <!-- End Google Analytics -->
 
+  <script>
+    /**
+     * Returns a random integer between min (inclusive) and max (inclusive)
+     * Using Math.round() will give you a non-uniform distribution!
+     */
+    function getRandomInt(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    var aryUsersId = ['2001', '2002', '2003', '2004'];
+    dataLayer = [{'userID': aryUsersId[getRandomInt(0, 4)]}];
+  </script>
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -72,22 +83,6 @@
   </header>
 
 </div>
-<script>
-  /**
- * Returns a random integer between min (inclusive) and max (inclusive)
- * Using Math.round() will give you a non-uniform distribution!
- */
-function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-setTimeout(function () {
-  var aryUsersId = ['2001', '2002', '2003', '2004'];
-  if (ga) {
-    ga('set', 'userId', aryUsersId[getRandomInt(0, 4)]);
-  }
-}, 6000);
-</script>
 </body>
 
 </html>
