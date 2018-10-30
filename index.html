@@ -82,7 +82,7 @@
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
   var aryUsersId = ['90001', '90002', '90003', '90004'];
-  ga('set', 'userID', aryUsersId[getRandomInt(0, 4)]);
+  dataLayer.push({'userID': aryUsersId[getRandomInt(0, 4)]});
 </script>
 </body>
 
