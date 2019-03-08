@@ -1,4 +1,5 @@
 # aitoralejandro.github.io
-Aitor Alejandro Website. Desarrollador Web Frontend.
+
+Aitor Alejandro front-end developer site.
 
 [https://aitoralejandro.github.io/](https://aitoralejandro.github.io)
