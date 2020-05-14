@@ -1,81 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Front End Developer | Aitor Alejandro</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Front End Developer | Aitor Alejandro</title>
-  
-  <!-- Google Optimize -->
-  <style>.async-hide { opacity: 0 !important} </style>
-  <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
-  h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
-  (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
-  })(window,document.documentElement,'async-hide','dataLayer',4000,
-  {'GTM-NWNWTNC':true});</script>
-  <!-- End Google Optimize -->
+    <!-- Google Optimize -->
+    <style>
+      .async-hide {
+        opacity: 0 !important;
+      }
+    </style>
+    <script>
+      (function (a, s, y, n, c, h, i, d, e) {
+        s.className += " " + y;
+        h.start = 1 * new Date();
+        h.end = i = function () {
+          s.className = s.className.replace(RegExp(" ?" + y), "");
+        };
+        (a[n] = a[n] || []).hide = h;
+        setTimeout(function () {
+          i();
+          h.end = null;
+        }, c);
+        h.timeout = c;
+      })(window, document.documentElement, "async-hide", "dataLayer", 4000, {
+        "GTM-NWNWTNC": true,
+      });
+    </script>
+    <!-- End Google Optimize -->
 
-  <!-- Google Analytics -->
-  <script>
-    (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date(); a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-84863035-1', 'auto');
-    ga('require', 'GTM-NWNWTNC');
-    ga('send', 'pageview');
-  </script>
-  <!-- End Google Analytics -->
+    <!-- Google Analytics -->
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "https://www.google-analytics.com/analytics.js",
+        "ga"
+      );
+      ga("create", "UA-84863035-1", "auto");
+      ga("require", "GTM-NWNWTNC");
+      ga("send", "pageview");
+    </script>
+    <!-- End Google Analytics -->
 
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-KCQB9MM');</script>
-  <!-- End Google Tag Manager -->
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KCQB9MM");
+    </script>
+    <!-- End Google Tag Manager -->
 
-  <meta name="description" content="Aitor Alejandro: HTML, CSS, and JavaScript to build everything">
-  <meta name="google" content="notranslate">
-  <meta content="telephone=no" name="format-detection">
-  <meta content="true" name="HandheldFriendly">
-  <meta content="yes" name="apple-mobile-web-app-capable">
-  <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
-  <meta content="Premiere" name="apple-mobile-web-app-title">
-  <meta name="msapplication-tap-highlight" content="no">
-  <meta content="Aitor Alejandro" name="author">
-  <link rel="publisher" href="https://plus.google.com/u/0/+AitorAlejandro">
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-  <link rel="apple-touch-icon" sizes="72x72" href="/aitor-alejandro-github-page-icon-72.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/aitor-alejandro-github-page-icon-16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/aitor-alejandro-github-page-icon-32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/aitor-alejandro-github-page-icon-96.png">
-  <link rel="icon" type="image/png" sizes="512x412"  href="/aitor-alejandro-github-page-icon-512.png">
-  <link href="https://aitoralejandro.github.io" rel="canonical">
-  <link rel="stylesheet" href="./css/styles.css">
-</head>
+    <meta
+      name="description"
+      content="Aitor Alejandro: HTML, CSS, and JavaScript to build everything"
+    />
+    <meta name="google" content="notranslate" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="true" name="HandheldFriendly" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta
+      content="black-translucent"
+      name="apple-mobile-web-app-status-bar-style"
+    />
+    <meta content="Premiere" name="apple-mobile-web-app-title" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta content="Aitor Alejandro" name="author" />
+    <link rel="publisher" href="https://plus.google.com/u/0/+AitorAlejandro" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/aitor-alejandro-github-page-icon-72.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/aitor-alejandro-github-page-icon-16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/aitor-alejandro-github-page-icon-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/aitor-alejandro-github-page-icon-96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x412"
+      href="/aitor-alejandro-github-page-icon-512.png"
+    />
+    <link href="https://aitoralejandro.github.io" rel="canonical" />
+  </head>
 
-<body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KCQB9MM"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KCQB9MM"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden;"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-<div class="page">
-
-  <header class="site-header">
-      <hgroup>
-        <h1 class="site-title"><a href="https://aitoralejandro.github.io/">Aitor Alejandro</a></h1>
-        <h2 class="site-subtitle"><span aria-hidden="true">&lt;</span>front-end developer <span aria-hidden="true">/&gt;</span></h2>
-      </hgroup>
-      <p class="site-claim">Web, the final frontier. These are the voyagers of a front-end developer. His never ending mission to explore strange
-        new worlds, to seek out new life and new technology to boldly go where no man has gone before.</p>
-  </header>
-
-</div>
-</body>
-
+    <div class="page">
+      <header class="site-header">
+        <hgroup>
+          <h1 class="site-title">
+            <a href="https://aitoralejandro.github.io/">Aitor Alejandro</a>
+          </h1>
+          <h2 class="site-subtitle">
+            <span aria-hidden="true">&lt;</span>front-end developer
+            <span aria-hidden="true">/&gt;</span>
+          </h2>
+        </hgroup>
+        <p class="site-claim">
+          Web, the final frontier. These are the voyagers of a front-end
+          developer. His never ending mission to explore strange new worlds, to
+          seek out new life and new technology to boldly go where no man has
+          gone before.
+        </p>
+      </header>
+    </div>
+    <script src="./dist/bundle.js"></script>
+  </body>
 </html>
